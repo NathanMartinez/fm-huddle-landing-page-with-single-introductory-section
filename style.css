@@ -67,7 +67,8 @@ h1 {
     font-weight: 400;
 }
 
-.container__register {
+.container__register,
+.container__register:active {
     text-align: center;
     background: #fff;
     padding: 0.75rem;
@@ -120,7 +121,7 @@ h1 {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--soft-magenta);
 }
 
 @media (min-width: 45em) {
@@ -149,6 +150,6 @@ h1 {
 
     .container__social-links {
         align-self: flex-end;
-        justify-self:end;
+        justify-self: end;
     }
 }
