@@ -1,0 +1,154 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    min-height: 100dvh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url("/images/bg-mobile.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    padding: 2.2rem;
+}
+
+.container__hero__logo {
+    width: 120px;
+    margin-bottom: 3rem;
+}
+
+.container__hero__mockup {
+    width: 100%;
+}
+
+.container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+    gap: 2rem;
+}
+
+.container__content__header {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+}
+
+.container__content__description {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container__register {
+    text-align: center;
+    background: #fff;
+    padding: 0.75rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    width: 200px;
+    margin-bottom: 2rem;
+}
+
+.container__register:is(:hover, :focus) {
+    background-color: var(--soft-magenta);
+    color: #fff;
+}
+
+
+.container__social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    bottom: 1rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.social-link:is(:hover, :focus) {
+    border: 1px solid var(--soft-magenta);
+}
+
+.social-link:is(:hover, :focus)>svg>path {
+    fill: var(--soft-magenta);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 45em) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("./images/bg-desktop.svg");
+        background-size: cover;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1.5fr;
+    }
+
+    .container__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 6rem 2rem;
+        text-align: left;
+    }
+
+
+    .container__social-links {
+        align-self: flex-end;
+        justify-self:end;
+    }
+}
