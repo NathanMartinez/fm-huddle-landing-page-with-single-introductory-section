@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/NathanMartinez/fm-huddle-landing-page-with-single-introductory-section)
-- Live Site URL: [Github Pages Site](https://your-live-site-url.com)
+- Live Site URL: [Github Pages Site](https://nathanmartinez.github.io/fm-huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
@@ -46,11 +46,11 @@ Users should be able to:
 
 ```css
 .social-link:is(:hover, :focus) {
-    border: 1px solid var(--soft-magenta);
+	border: 1px solid var(--soft-magenta);
 }
 
-.social-link:is(:hover, :focus)>svg>path {
-    fill: var(--soft-magenta);
+.social-link:is(:hover, :focus) > svg > path {
+	fill: var(--soft-magenta);
 }
 ```
 
